@@ -124,12 +124,7 @@ R_{opt} = \sqrt{R_{min} \times R_{max}}
 
 In practice this means we should measure the resistance of the sensor at the two extremes of what we want to measure (for example in a bright room, and a dark room if we were using a resistive light sensor), and choose a resistor value that we have that occurs between these two extremes, as close as possible to the optimum.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{images/Vdiv.png}
-\caption{Optimizing the sensitivity of a voltage divider} 
-\label{fig:v_div_sens}
-\end{figure}
+![Optimizing the sensitivity of a voltage divider](images/Vdiv.png)
 
 ### Calibrating Sensors
 
