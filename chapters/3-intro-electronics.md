@@ -1,5 +1,6 @@
 # Chapter 3 -- Electronics
 
+$$x=4$$
 Since we're learning all about embedded development, we need to spend some time learning about electronics. Electronics is a huge field, and encompasses a large number of topics, so it's impossible for us to cover every topic exhaustively. Rather than trying to exhaustively cover the field of electronics, we'll try to introduce enough topics that you can put together simple circuits, hook components together and start to understand what is going on with the embedded devices you see around you.
 
 Since there is such a large number of topics to cover, don't worry if this doesn't all make sense on your first read-through. Most of the content you will have a chance to learn along the way. But since we can't cover everything in the limited time we have, this section is meant to be a reference to come back to as the program progresses.
