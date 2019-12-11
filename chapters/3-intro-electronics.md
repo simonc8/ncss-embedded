@@ -165,7 +165,7 @@ Say we wanted to connect a button to a controller (we do want to do that, a lot)
 
 For starters, it's possible to wire it directly to the positive rail like this:
 
-![A floating switch. This probably won't work!](floating_switch.png)
+![A floating switch. This probably won't work!](images/floating_switch.png)
 
 But how do we know what the voltage is at the `pin` when the switch is open (not pressed)?
 
@@ -173,13 +173,13 @@ We don't! The pin is *floating*, which means we can't tell what the voltage at t
 
 So what we do is use a resistor to *pull* the voltage to a known state when it isn't connected to anything.
 
-![A pull-down resistor on a switch](pulldown_switch.png)
+![A pull-down resistor on a switch](images/pulldown_switch.png)
 
 When the switch is open, the resistor pulls the voltage at the pin to 0V, and when it is closed, this connects the pin directly to *high* (3.3V), so we never have an undefined voltage. This is called a *pull-down* resistor since it pulls the voltage down to `0V`
 
 We can also invert the behavior of the switch by changing around the order of the switch and the resistor.
 
-![A pull-up resistor on a switch](pullup_switch.png)
+![A pull-up resistor on a switch](images/pullup_switch.png)
 
 In this case the opposite is true, when the switch is open the voltage at the pin is `3.3V`, and when the switch is closed, the voltage is `0V`. For this reason it is called a *pull-up* resistor.
 
@@ -199,7 +199,7 @@ So what we do in this case, is use a level-shifter to transform the waveform.
 
 Rather than building a circuit to do this ourselves (which you could do using a few transistors), we use an *integrated circuit* (or chip) designed for this purpose. One example is the 74AHCT125, which converts a `3.3V` input signal to a `5V` output signal (as shown in the diagram below).
 
-![Level shifting a signal from 3.3V to 5V](level-shifter.png)
+![Level shifting a signal from 3.3V to 5V](images/level-shifter.png)
 
 Level shifting can be generalised in that it is shifting from *any* voltage level to *any other* voltage level. It is quite common the shift the other way (`5V`→`3.3V` where you might use `74LVC245` chip to do this).
 
@@ -229,7 +229,7 @@ Diodes are *"non-linear"* or *"non-ohmic"* devices, which means that Ohm's law d
 
 Something with a very low resistance effectively looks like a short circuit, which means that a lot of current will flow and potentially damage the LED or the thing that is powering it (e.g. the micro:bit pin). So what we need is a way to ensure that only a specific current flows, which is why every time we use an LED, we also need a *current-limiting resistor*.
 
-![A current limiting resistor on an LED](led_res.png)
+![A current limiting resistor on an LED](images/led_res.png)
 
 *Note that in the symbol for an LED, the bar points towards the cathode (which should be connected to the lower voltage, i.e. ground).
 
