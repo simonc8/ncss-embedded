@@ -100,12 +100,7 @@ Since ground is just a point we choose, we have to make sure that whenever we ar
 
 A voltage divider is one of the most common circuits that exist! It looks like this:
 
-\begin{figure}
-\centering
-\includegraphics[width=0.2\linewidth]{images/Resistive_divider2.png}
-\caption{A voltage divider} 
-\label{fig:v_div} 
-\end{figure}
+![A voltage divider](images/Resistive_divider2.png)
 
 Given a voltage input, it produces a fraction of the input as the output.
 
